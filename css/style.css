@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: SF Pro Text, Myriad Set Pro, SF Pro Icons, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+}
+
+.header {
+  background-color: #000000;
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+}
+.main-nav ul li {
+  margin-right: 85px;
+}
+.main-nav ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #f5f5f7;
+  opacity: 0.7;
+  transition: 0.3s ease-out;
+}
+.main-nav ul li a:hover {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.9;
+}
+
+.iphone-se {
+  background: url("/img/iphone-se.png") no-repeat center center/cover;
+  height: 550px;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.iphone-se h1 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 23px;
+  padding-top: 40px;
+}
+
+.iphone-se p {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.iphone-se a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.iphone-se a:hover {
+  text-decoration: underline;
+}
+
+.iphone-11 {
+  background: url("/img/iphone-11.png") no-repeat center center/cover;
+  height: 550px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.iphone-11 h1,
+p {
+  color: #000000;
+  margin-bottom: 12px;
+  margin-left: 16px;
+}
+
+.iphone-11 h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 23px;
+  padding-top: 40px;
+}
+
+.iphone-11 p {
+  font-size: 30px;
+}
+
+.iphone-11 a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.iphone-11 a:hover {
+  text-decoration: underline;
+}
+
+/** Ipad Pro **/
+div.ipad-pro {
+  background: url("/img/ipad-pro.png") no-repeat;
+  background-size: contain;
+  height: 550px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.ipad-pro h1,
+p {
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.ipad-pro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 23px;
+  padding-top: 40px;
+}
+
+.ipad-pro p {
+  font-size: 30px;
+}
+
+.ipad-pro a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.ipad-pro a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px; /* add a space between divs */
+  margin-bottom: 8px;
+}
+
+.iphone-11-pro {
+  background: url("/img/iphonePro.jpg") no-repeat center center/cover;
+  height: 550px;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.iphone-11-pro h1 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.iphone-11-pro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 23px;
+  padding-top: 40px;
+}
+
+.iphone-11-pro p {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.iphone-11-pro a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.iphone-11-pro a:hover {
+  text-decoration: underline;
+}
+
+.i-mac {
+  background: url("/img/imac2.jpg") no-repeat center center/cover;
+  height: 550px;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.i-mac h1,
+p {
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.i-mac h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.i-mac p {
+  font-size: 20px;
+}
+
+.i-mac a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.i-mac a:hover {
+  text-decoration: underline;
+}
+
+.macbook-pro {
+  background: url("/img/macbook-pro.jpg") no-repeat center center/cover;
+  height: 550px;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.macbook-pro h1 {
+  color: #ffffff;
+}
+
+.macbook-pro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+.macbook-pro p {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.macbook-pro a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.macbook-pro a:hover {
+  text-decoration: underline;
+}
+
+.arcade {
+  background: url("/img/arcadegameclub.jpg") no-repeat center center/cover;
+  height: 550px;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.arcade h1 {
+  color: #ffffff;
+}
+
+.arcade h1 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.arcade p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.arcade a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 25px;
+}
+
+.arcade a:hover {
+  text-decoration: underline;
+}
+
+/* Links */
+.links {
+  background: #f5f5f5;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.links li {
+  line-height: 2.8;
+}
+
+.links li a {
+  color: #86868b;
+  text-decoration: none;
+}
+
+.links .bottom-text a {
+  color: #06c;
+  text-decoration: none;
+}
+
+.links li a:hover {
+  text-decoration: underline;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+.links li h4 {
+  color: inherit;
+  font-weight: 400;
+}
+
+.links .top-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 223px;
+  padding: 0 20px 0 20px;
+  align-items: flex-start;
+}
+
+.links .bottom-text {
+  display: flex;
+  margin-left: 243px;
+  margin-top: 25px;
+  align-items: flex-start;
+}
+
+
+.footer-text {
+margin-bottom: 16px;
+color: #86868b;
+}
+
+.links .hr {
+  margin-left: 258px;
+  margin-right: 258px;
+  margin-bottom: 12px;
+}
+
+.last-text {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.last-text ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.country {
+  list-style: none;
+}
+.last-text ul li:first-child {
+  margin-right: 40px;
+}
+
+.last-text ul li {
+  float: left;
+  margin-right: 12px;
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .links .top-text {
+    margin-left: 0;
+  }
+  .links .bottom-text {
+    margin-left: 0;
+  }
+  .links .last-text {
+    margin-left: 0;
+  }
+  .links .hr {
+    margin: 10px auto;
+  }
+  .last-text ul li:first-child {
+    margin-right: 5px;
+  }
+  .iphone-11-pro, .iphone-11, .iphone-se, .ipad-pro, .i-mac, .macbook-pro, .arcade {
+    text-align: center;
+  }
+  .iphone-11-pro h1, .iphone-11 h1, .iphone-se h1, .macbook-pro h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 30px;
+    padding-top: 15px;
+  }
+  .ipad-pro h1 {
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .iphone-11-pro p, .iphone-11 p, .iphone-se p, .ipad-pro p, .macbook-pro p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .iphone-11-pro a {
+    font-size: 18px;
+  }
+
+  .main-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-nav ul li {
+    margin: 0 auto;
+  }
+  .hide {
+    display: none;
+  }
+  
+  
+}
